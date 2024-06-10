@@ -507,7 +507,7 @@ ul {
   display: inline-block;
   width: 60px;
   height: 60px;
-  background: var(--fobex-black);
+  background: var(--fobex-base);
   position: fixed;
   bottom: 50px;
   right: 50px;
@@ -588,6 +588,8 @@ ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0 auto !important;
+  text-align: center;
 }
 
 .main-menu__logo {
@@ -679,7 +681,7 @@ ul {
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  margin-top: 7px;
+  /* margin-top: 7px; */
 }
 
 .main-menu__call-number a {
@@ -714,7 +716,7 @@ ul {
 }
 
 .stricky-header.main-menu {
-  background-color: var(--fobex-black);
+  background-color: rgba(0, 0,0,0.4)
 }
 
 .main-menu .main-menu__list,
@@ -1902,7 +1904,7 @@ ul {
   color: var(--fobex-white);
   font-weight: 700;
   line-height: 90px;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 24px;
   opacity: 0;
   visibility: hidden;
@@ -3173,9 +3175,9 @@ ul {
   margin-top: 0;
 }
 
-.how-it-work__single-2 .how-it-work__text {
+/* .how-it-work__single-2 .how-it-work__text {
   margin-bottom: 31px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonial One
@@ -3749,8 +3751,8 @@ ul {
 .site-footer {
   position: relative;
   display: block;
-  background-color: #0C3A30;
-  padding-top: 30px;
+  background: var(--fobex-black);
+  /* padding-top: 30px; */
   z-index: 1;
 }
 
@@ -4132,7 +4134,7 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 37px 0 37px;
 }
@@ -4142,13 +4144,13 @@ ul {
 }
 
 .site-footer__bottom-text a {
-  color: var(--fobex-primary);
+  color: white;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 
 .site-footer__bottom-text a:hover {
-  color: var(--fobex-white);
+  color: white;
 }
 
 .site-footer__bottom-menu {
@@ -10648,3 +10650,12 @@ ul {
 /*--------------------------------------------------------------
 # End
 --------------------------------------------------------------*/
+
+.owl-theme .owl-dots .owl-dot {
+  opacity: 0 !important;
+}
+
+.align-equal {
+  display: flex;
+  align-items: stretch;
+}
